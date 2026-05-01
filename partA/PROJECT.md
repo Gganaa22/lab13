@@ -1,14 +1,21 @@
 # Personal Task Tracker
 
 ## Goal
-User can manage tasks in a simple web application.
+This project aims to build a simple task management system where users can create, update, delete, and view tasks.
 
 ## Scope
-This project will include basic task management features.
+The system will allow basic task management functionality without authentication.
 
-## Main Features
+## Features
 - Add task
-- View task list
+- View all tasks
 - Update task
 - Delete task
-- Search/filter tasks
+- Search tasks
+
+## Users
+- Students who want to manage daily tasks
+
+## Limitations
+- No login system
+- Data stored in memory (not permanent)
