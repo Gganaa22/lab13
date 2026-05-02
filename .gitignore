@@ -1,0 +1,4 @@
+node_modules/
+partB/node_modules/
+.env
+.DS_Store
