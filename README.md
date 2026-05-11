@@ -1,10 +1,10 @@
-# Bie Daalt 13 - AI-Assisted Software Construction
+# Lab 13 - AI-Assisted Software Construction
 
 ## Project
 Personal Task Tracker
 
 ## Description
-This repository contains the coursework for F.CSM311 Bie Daalt 13.
+This repository contains the coursework for F.CSM311 Lab 13.
 
 The project demonstrates an AI-assisted software construction workflow using planning documents, implementation, tests, AI session logs, and reflection.
 
