@@ -27,7 +27,7 @@ The project demonstrates an AI-assisted software construction workflow using pla
 ## Repository Structure
 
 ```text
-bie-daalt-13/
+lab13/
 ├── partA/
 │   ├── PROJECT.md
 │   ├── ARCHITECTURE.md
@@ -65,3 +65,13 @@ npm test
 
 ## AI Usage
 AI was used for planning, generating draft code, writing test ideas, and reviewing documentation. All AI outputs were manually reviewed and adjusted before committing.
+
+
+## Final Status
+
+- Planning documents completed
+- Backend API implemented
+- Search and filter features added
+- 11 automated tests passing
+- AI session logs completed
+- Reflection documents completed
