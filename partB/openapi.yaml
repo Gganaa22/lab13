@@ -1,0 +1,117 @@
+openapi: 3.0.0
+info:
+  title: Personal Task Tracker API
+  version: 1.0.0
+  description: API documentation for the Lab 13 Personal Task Tracker project.
+
+servers:
+  - url: http://localhost:3000
+
+paths:
+  /:
+    get:
+      summary: Get API information
+      responses:
+        '200':
+          description: API information returned successfully
+
+  /tasks:
+    get:
+      summary: Get all tasks with optional search and filters
+      parameters:
+        - name: search
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Search tasks by title
+        - name: priority
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter tasks by priority
+        - name: label
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter tasks by label
+      responses:
+        '200':
+          description: List of tasks returned successfully
+
+    post:
+      summary: Create a new task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - title
+              properties:
+                title:
+                  type: string
+                dueDate:
+                  type: string
+                  nullable: true
+                priority:
+                  type: string
+                  example: high
+                label:
+                  type: string
+                  example: school
+      responses:
+        '201':
+          description: Task created successfully
+        '400':
+          description: Task title is required
+
+  /tasks/{id}:
+    put:
+      summary: Update a task
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: number
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                dueDate:
+                  type: string
+                  nullable: true
+                priority:
+                  type: string
+                label:
+                  type: string
+                completed:
+                  type: boolean
+      responses:
+        '200':
+          description: Task updated successfully
+        '404':
+          description: Task not found
+
+    delete:
+      summary: Delete a task
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: number
+      responses:
+        '200':
+          description: Task deleted successfully
+        '404':
+          description: Task not found
