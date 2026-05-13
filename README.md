@@ -75,3 +75,9 @@ AI was used for planning, generating draft code, writing test ideas, and reviewi
 - 11 automated tests passing
 - AI session logs completed
 - Reflection documents completed
+
+## Test Result Screenshot
+The automated test result screenshot is stored in:
+
+```text
+screenshots/test-pass.png
